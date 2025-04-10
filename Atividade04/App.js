@@ -89,9 +89,9 @@ export default function App() {
         value={slider1}
         onValueChange={setSlider1}
         style={styles.slider}
-        minimumTrackTintColor="#1fb28a"
-        maximumTrackTintColor="#d3d3d3"
-        thumbTintColor="#1a9274"
+        minimumTrackTintColor="#93cbe5"
+        maximumTrackTintColor="#aaf4f8"
+        thumbTintColor="#aaf4f8"
       />
 
       <Text>Slider 2: {slider2.toFixed(2)}</Text>
@@ -101,9 +101,9 @@ export default function App() {
         value={slider2}
         onValueChange={setSlider2}
         style={styles.slider}
-        minimumTrackTintColor="#f194ff"
-        maximumTrackTintColor="#d3d3d3"
-        thumbTintColor="#b000b5"
+        minimumTrackTintColor="#e5937f"
+        maximumTrackTintColor="#f99079"
+        thumbTintColor="#f99079"
       />
 
       {/* Switches */}
@@ -119,9 +119,9 @@ export default function App() {
 
       {/* Botões */}
       <Text style={styles.sectionTitle}>Ações (interação)</Text>
-      <Button title="Clique aqui (1)" onPress={handleButton1} />
+      <Button title="Clique aqui (1)" onPress={handleButton1} color="#f99079" />
       <View style={styles.spacer} />
-      <Button title="Clique aqui (2)" onPress={handleButton2} />
+      <Button title="Clique aqui (2)" onPress={handleButton2} color="#f99079" />
       <View style={styles.spacer} />
       <Button title="Resetar Tudo" onPress={resetAll} color="red" />
 
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
   },
   input: {
     width: '100%',
-    borderColor: '#ccc',
+    borderColor: '#cccc',
     borderWidth: 1,
     borderRadius: 8,
     padding: 10,
